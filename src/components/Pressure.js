@@ -18,13 +18,8 @@ const Pressure = () => {
     
           navigator.geolocation.getCurrentPosition(success, error);
     
-    
-    
     },[])
 
-  function error(err) {
-    console.warn(`ERROR(${err.code}): ${err.message}`);
-  }
     return (
         <div>
             <h1>Pressure:{pressure} mb</h1>

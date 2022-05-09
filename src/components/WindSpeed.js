@@ -20,12 +20,6 @@ const WindSpeed = () => {
           }
           
           navigator.geolocation.getCurrentPosition(success, error,);
-
-          
-
-
-
-
     },[])
 
 

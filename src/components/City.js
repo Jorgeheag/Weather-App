@@ -13,20 +13,13 @@ const City = (() => {
                     .then(res=> setCity(res.data) )
 
         }          
-        const error=(err)=> {
-          console.warn(`ERROR(${err.code}): ${err.message}`);
+        function error(err) {
+         console.warn(`ERROR(${err.code}): ${err.message}`);
           }
     
           navigator.geolocation.getCurrentPosition(success, error);
-    
-    
-    
+  
     },[])
-
-    const error=(err)=> {
-    console.warn(`ERROR(${err.code}): ${err.message}`);
-  }
-
 
     return (
         <div>

@@ -18,9 +18,6 @@ const Temperature = () => {
     
           navigator.geolocation.getCurrentPosition(success, error);
       },[])
-   function error(err) {
-    console.warn(`ERROR(${err.code}): ${err.message}`);
-  }
 
     const [change, setChange] = useState(true)
     const changeCom = () => {

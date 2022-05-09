@@ -17,14 +17,9 @@ const IconWeather = (() => {
           }
     
           navigator.geolocation.getCurrentPosition(success, error);
-    
-    
-    
     },[])
 
-  function error(err) {
-    console.warn(`ERROR(${err.code}): ${err.message}`);
-  }
+  
     return (
         <div>
             <img src={`http://openweathermap.org/img/wn/${iconWeather}@2x.png`} alt="" />

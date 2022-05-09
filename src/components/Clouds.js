@@ -19,13 +19,8 @@ const Clouds = () => {
     
           navigator.geolocation.getCurrentPosition(success, error);
     
-    
-    
     },[])
 
-  function error(err) {
-    console.warn(`ERROR(${err.code}): ${err.message}`);
-  }
 
     return (
         <div>
