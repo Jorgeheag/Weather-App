@@ -13,8 +13,8 @@ const City = (() => {
                     .then(res=> setCity(res.data) )
 
         }          
-        function error(err) {
-         console.warn(`ERROR(${err.code}): ${err.message}`);
+        const error=(err)=> {
+          console.warn(`ERROR(${err.code}): ${err.message}`);
           }
     
           navigator.geolocation.getCurrentPosition(success, error);
@@ -23,7 +23,7 @@ const City = (() => {
     
     },[])
 
-  function error(err) {
+    const error=(err)=> {
     console.warn(`ERROR(${err.code}): ${err.message}`);
   }
 
