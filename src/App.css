@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  background-image: url(./images/concepto-climas-lifeder-min.webp);
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-Weather{
+  background-color: aqua;
+  width: 45vh;
+  height: 69vh;
+  font-size: 6px;
+  box-shadow: 0px 0px 25px 10px rgb(74, 189, 218);;
+
+}
+
+.inconChild {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-text {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
